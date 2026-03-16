@@ -1,0 +1,89 @@
+<% layout("layouts/boilerplate")%>
+<body>
+  <div class="row mt-3">
+    <div class="col-8 offset-2">
+      <form action="/listings"   method="POST" class="needs-validation" novalidate enctype="multipart/form-data">
+         <br>
+        <h2>CREAT A NEW LISTING</h2>
+        <div class="mb-3">
+          <label for="title" class="form-label" >title</label>
+          <input
+            type="text"
+            name="listing[title]"
+            placeholder="enter title"
+            class="form-control"
+            required 
+          />
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="description" class="form-label">description</label>
+          <textarea
+            name="listing[description]"
+            placeholder="enter Description"
+            class="form-control"
+            required 
+          ></textarea>
+           <div class="invalid-feedback">
+        Please enter a short description
+      </div>
+        </div>
+        <div class="row">
+        <div class="mb-3 col-md-4">
+          <label for="price" class="form-label">price</label>
+          <input
+            
+            name="listing[price]"
+            placeholder="enter Price"
+            class="form-control"
+            required 
+          />
+           <div class="invalid-feedback">
+          please enter valid price
+          </div>
+        </div>
+        <div class="mb-3 col-md-8">
+          <label for="country" class="form-label">country</label>
+          <input
+            type="text"
+            name="listing[country]"
+            placeholder="enter country"
+            class="form-control"
+          required
+          />
+           <div class="invalid-feedback">
+        please enter country.
+        </div>
+        </div>        
+        </div>
+        
+        <div class="mb-3">
+          <label for="image" class="form-label">upload image</label>
+          <input
+            type="file"
+            name="listing[image]"
+           
+            class="form-control"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="location" class="form-label">location</label>
+          <input
+            type="text"
+            name="listing[location]"
+            placeholder="enter location"
+            class="form-control"
+            required
+          />
+           <div class="invalid-feedback">
+        please enter location.
+      </div>
+        </div>
+        <button class="btn btn-dark btn-new mt-3">Add</button>
+        <br><br>
+      </form>
+    </div>
+  </div>
+</body>
