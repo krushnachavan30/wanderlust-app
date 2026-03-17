@@ -15,5 +15,5 @@ Wanderlust is a full-stack, immersive, and user-friendly travel web application 
 - Deployed on Render for optimal performance and reliability  
 
 **Links:**  
-- Live Site: [Your Deployed Link]  
-- GitHub Repo: [Your GitHub Repo Link]
+- Live Site: https://wanderlust-app-bgd7.onrender.com  
+- GitHub Repo: https://github.com/krushnachavan30/wanderlust-app
